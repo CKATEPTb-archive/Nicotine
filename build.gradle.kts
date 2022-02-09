@@ -1,5 +1,7 @@
 plugins {
     java
+    `maven-publish`
+    id("com.github.johnrengelman.shadow").version("7.1.0")
 }
 
 group = "ru.ckateptb"
@@ -24,12 +26,31 @@ dependencies {
 }
 
 tasks {
+    shadowJar {
+        archiveFileName.set("${project.name}-${project.version}.${archiveExtension.getOrElse("jar")}")
+    }
+    build {
+        dependsOn(shadowJar)
+    }
     withType<JavaCompile> {
         options.encoding = "UTF-8"
     }
     named<Copy>("processResources") {
         from("LICENSE") {
             rename { "${project.name.toUpperCase()}_${it}" }
+        }
+    }
+}
+
+publishing {
+    publications {
+        publications.create<MavenPublication>("maven") {
+            artifacts {
+                artifact(tasks.shadowJar) {
+                    classifier = ""
+                }
+                artifact(tasks["sourcesJar"])
+            }
         }
     }
 }
