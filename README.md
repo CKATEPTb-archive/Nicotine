@@ -1,0 +1,1 @@
+#Nicotine [![License](https://img.shields.io/packagist/l/ckateptb/nicotine)](https://github.com/CKATEPTb/Nicotine/blob/master/LICENSE.md) [![Release](https://jitpack.io/v/CKATEPTb/Nicotine.svg)](https://jitpack.io/#CKATEPTb/Nicotine)
