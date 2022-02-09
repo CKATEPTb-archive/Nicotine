@@ -28,7 +28,7 @@ tasks {
         options.encoding = "UTF-8"
     }
     named<Copy>("processResources") {
-        from("LICENSE.md") {
+        from("LICENSE") {
             rename { "${project.name.toUpperCase()}_${it}" }
         }
     }
