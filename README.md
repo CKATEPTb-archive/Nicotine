@@ -1,5 +1,5 @@
 Nicotine [![License](https://img.shields.io/github/license/CKATEPTb/Nicotine)](https://github.com/CKATEPTb/Nicotine/blob/master/LICENSE)
-[![Discord](https://img.shields.io/discord/925686623222505482.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/papermc)
+[![Discord](https://img.shields.io/discord/925686623222505482.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/P7FaqjcATp)
 [![Release](https://jitpack.io/v/ru.ckateptb/Nicotine.svg)](https://jitpack.io/#ru.ckateptb/Nicotine)
 ===========
 
